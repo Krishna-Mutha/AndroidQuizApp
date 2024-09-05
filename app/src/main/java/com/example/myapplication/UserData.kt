@@ -1,5 +1,6 @@
 package com.example.myapplication
 
 object UserData {
-    var name = "Krishna"
+    var name = ""
+    var score = mutableMapOf<String,Int>()
 }

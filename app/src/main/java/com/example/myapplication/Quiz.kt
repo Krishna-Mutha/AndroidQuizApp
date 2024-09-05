@@ -1,13 +1,13 @@
 package com.example.myapplication
 
-class Quiz(
-    val quizTitle: String = "",
-    val questions: List<Question> = listOf(),
-    val category: String = ""
+data class Quiz(
+    val categoryName: String = "",
+    val questions: List<Question> = emptyList(),
+    val quizTitle: String = ""
 )
 
-class Question(
-    val questionText: String = "",
-    val options: List<String> = listOf(),
-    val correctAnswerIndex: Int = -1
+data class Question(
+    val correctAnswerIndex: Int = 0,
+    val options: List<String?> = emptyList(),
+    val questionText: String? = ""
 )
